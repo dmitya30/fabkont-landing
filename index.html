@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Автоматическая система видеоконтента для бизнеса. 30 видео/мес, 6 платформ, полная воронка в ТГ. От 25 000 ₽/мес. Бесплатный аудит.">
+    <title>Фабрика Контента — 30 видео в месяц без вашего участия | Система + воронка</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Custom colors from AICS_13 */
+        :root {
+            --primary-blue: #2563EB;
+            --success-green: #10B981;
+            --dark-text: #1E293B;
+            --gray-text: #64748B;
+            --light-bg: #F8FAFC;
+            --danger-red: #EF4444;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-text);
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Fade in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold" style="color: var(--primary-blue);">Фабрика Контента</div>
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="#how-it-works" class="hover:text-blue-600 transition">Как работает</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">Тарифы</a>
+                <a href="#cases" class="hover:text-blue-600 transition">Кейсы</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            </div>
+            <a href="https://t.me/fabkont_bot" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                Бесплатный аудит
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-text);">
+                Система контента, которая приводит клиентов
+            </h1>
+            <p class="text-xl md:text-2xl mb-8" style="color: var(--gray-text);">
+                30 видео в месяц без вашего участия. Не просто контент — полная воронка: от первого просмотра до заявки в боте.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://t.me/fabkont_bot" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                    Бесплатный аудит
+                </a>
+                <a href="#how-it-works" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition">
+                    Как это работает
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 px-4" style="background-color: var(--light-bg);">
+        <div class="max-w-6xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Почему «просто контент» не работает
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <h3 class="text-xl font-semibold mb-3">SMM-щики приходят и уходят</h3>
+                    <p style="color: var(--gray-text);">А контент нужен каждый день</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <h3 class="text-xl font-semibold mb-3">Платите 100-200к за команду</h3>
+                    <p style="color: var(--gray-text);">Результат — «охваты растут». А продажи?</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <h3 class="text-xl font-semibold mb-3">Видео есть. Воронки нет</h3>
+                    <p style="color: var(--gray-text);">Заявок — ноль</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <h3 class="text-xl font-semibold mb-3">«Контент ради контента»</h3>
+                    <p style="color: var(--gray-text);">Деньги в трубу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Фабрика Контента = система + воронка
+            </h2>
+            
+            <!-- Funnel Diagram -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 text-center">
+                <div class="bg-blue-50 px-6 py-4 rounded-lg">
+                    <div class="text-3xl mb-2">🎬</div>
+                    <div class="font-semibold">Видео</div>
+                    <div class="text-sm text-gray-600">30 шт/мес</div>
+                </div>
+                <div class="text-2xl text-gray-400">→</div>
+                <div class="bg-blue-50 px-6 py-4 rounded-lg">
+                    <div class="text-3xl mb-2">🌐</div>
+                    <div class="font-semibold">6 платформ</div>
+                    <div class="text-sm text-gray-600">Автопостинг</div>
+                </div>
+                <div class="text-2xl text-gray-400">→</div>
+                <div class="bg-blue-50 px-6 py-4 rounded-lg">
+                    <div class="text-3xl mb-2">📱</div>
+                    <div class="font-semibold">ТГ канал</div>
+                    <div class="text-sm text-gray-600">Прогрев</div>
+                </div>
+                <div class="text-2xl text-gray-400">→</div>
+                <div class="bg-blue-50 px-6 py-4 rounded-lg">
+                    <div class="text-3xl mb-2">🤖</div>
+                    <div class="font-semibold">Бот</div>
+                    <div class="text-sm text-gray-600">Квалификация</div>
+                </div>
+                <div class="text-2xl text-gray-400">→</div>
+                <div class="bg-green-50 px-6 py-4 rounded-lg">
+                    <div class="text-3xl mb-2">✅</div>
+                    <div class="font-semibold">Заявка</div>
+                    <div class="text-sm text-green-600">Результат</div>
+                </div>
+            </div>
+            
+            <p class="text-xl text-center max-w-3xl mx-auto" style="color: var(--gray-text);">
+                Каждое видео ведёт к цели. Не просто «постим и надеемся» — строим путь клиента от первого касания до заявки.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 px-4" style="background-color: var(--light-bg);">
+        <div class="max-w-6xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Как это работает
+            </h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Setup</h3>
+                    <p style="color: var(--gray-text);">Создаём профайл, настраиваем систему. 2-4 недели.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-3">Запуск</h3>
+                    <p style="color: var(--gray-text);">Видео выходят каждый день на всех платформах без вашего участия.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-3">Воронка</h3>
+                    <p style="color: var(--gray-text);">С каждого видео — ссылка в ТГ. Оттуда — в бота за заявкой.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-semibold mb-3">Рост</h3>
+                    <p style="color: var(--gray-text);">Через 3-6 месяцев — стабильный органический трафик и заявки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-4">Тарифы</h2>
+            <p class="text-center text-gray-600 mb-12">Прозрачное ценообразование без скрытых платежей</p>
+            
+            <!-- Setup -->
+            <h3 class="text-2xl font-bold mb-6 text-center">Setup (разово)</h3>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-blue-600 transition">
+                    <h4 class="text-xl font-bold mb-2">ЛАЙТ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">50 000 ₽</div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ Профайл бренда</li>
+                        <li>✓ 10 видео</li>
+                        <li>✓ 3 платформы</li>
+                    </ul>
+                </div>
+                <div class="bg-white border-2 border-blue-600 rounded-xl p-8 shadow-lg transform md:scale-105">
+                    <div class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-2">ПОПУЛЯРНЫЙ</div>
+                    <h4 class="text-xl font-bold mb-2">СТАНДАРТ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">80 000 ₽</div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ Профайл + оформление</li>
+                        <li>✓ 15 видео</li>
+                        <li>✓ 6 платформ</li>
+                    </ul>
+                </div>
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-blue-600 transition">
+                    <h4 class="text-xl font-bold mb-2">ПОЛНЫЙ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">120 000 ₽</div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ Всё из СТАНДАРТ</li>
+                        <li>✓ ТГ канал</li>
+                        <li>✓ Бот + интеграции</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subscription -->
+            <h3 class="text-2xl font-bold mb-6 text-center">Подписка (ежемесячно)</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-blue-600 transition">
+                    <h4 class="text-xl font-bold mb-2">МИНИМУМ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">25 000 ₽<span class="text-lg text-gray-600">/мес</span></div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ 15 видео в месяц</li>
+                        <li>✓ 3 платформы</li>
+                        <li>✓ Базовая аналитика</li>
+                    </ul>
+                </div>
+                <div class="bg-white border-2 border-blue-600 rounded-xl p-8 shadow-lg transform md:scale-105">
+                    <div class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-2">ПОПУЛЯРНЫЙ</div>
+                    <h4 class="text-xl font-bold mb-2">СТАНДАРТ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">35 000 ₽<span class="text-lg text-gray-600">/мес</span></div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ 30 видео в месяц</li>
+                        <li>✓ 6 платформ</li>
+                        <li>✓ Еженедельные отчёты</li>
+                    </ul>
+                </div>
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-blue-600 transition">
+                    <h4 class="text-xl font-bold mb-2">ПОЛНЫЙ</h4>
+                    <div class="text-3xl font-bold mb-4" style="color: var(--primary-blue);">50 000 ₽<span class="text-lg text-gray-600">/мес</span></div>
+                    <ul class="space-y-3 mb-6" style="color: var(--gray-text);">
+                        <li>✓ Всё из СТАНДАРТ</li>
+                        <li>✓ ТГ посты</li>
+                        <li>✓ Ведение бота</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honest Results Section -->
+    <section id="honest" class="py-20 px-4" style="background-color: var(--light-bg);">
+        <div class="max-w-4xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Мы не обещаем волшебства
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-green-600">Гарантируем ✓</h3>
+                    <ul class="space-y-3" style="color: var(--gray-text);">
+                        <li>✓ 30 видео в месяц по расписанию</li>
+                        <li>✓ Публикация на всех платформах</li>
+                        <li>✓ Единый стиль бренда</li>
+                        <li>✓ Еженедельные отчёты</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-red-600">НЕ гарантируем ✗</h3>
+                    <ul class="space-y-3" style="color: var(--gray-text);">
+                        <li>✗ Миллионы просмотров</li>
+                        <li>✗ Результат за 1-2 месяца</li>
+                        <li>✗ «Вирусность»</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+                <h3 class="text-xl font-bold mb-4">Когда результат?</h3>
+                <p class="text-lg" style="color: var(--gray-text);">
+                    Первые признаки — 2-3 месяца.<br>
+                    Устойчивый трафик — 6 месяцев.<br>
+                    <strong>Это не магия, это математика.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">Кейсы</h2>
+            
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl mb-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="text-4xl">🏭</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Фабрика Контента (мы сами)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Ниша: B2B SaaS | Задача: Запуск с нуля</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600">0 → 500+</div>
+                        <div class="text-sm text-gray-600">Подписчиков в ТГ</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600">30 видео/мес</div>
+                        <div class="text-sm text-gray-600">Стабильный выпуск</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600">6 платформ</div>
+                        <div class="text-sm text-gray-600">Одновременно</div>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-gray-700">
+                    💡 Главный кейс — мы сами. Показываем прогресс в реальном времени в нашем ТГ канале.
+                </p>
+            </div>
+            
+            <p class="text-center text-gray-600">
+                Больше кейсов появится по мере работы с клиентами. Мы честны — проект новый, но технология проверена.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4" style="background-color: var(--light-bg);">
+        <div class="max-w-4xl mx-auto fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">Частые вопросы</h2>
+            
+            <div class="space-y-4">
+                <details class="bg-white p-6 rounded-xl shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer">Что мы гарантируем?</summary>
+                    <p class="mt-4" style="color: var(--gray-text);">
+                        Гарантируем: 30 видео в месяц по расписанию, публикацию на шести платформах, соответствие вашему бренду, органический трафик и подписчиков в ваш канал Телеграм, еженедельные отчёты с метриками.
+                    </p>
+                </details>
+                
+                <details class="bg-white p-6 rounded-xl shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer">Чего мы НЕ гарантируем?</summary>
+                    <p class="mt-4" style="color: var(--gray-text);">
+                        Не гарантируем: миллионы просмотров, «вирусные» видео, конкретное число лидов, результат за 1-2 месяца. Мы честны — это система, не волшебство. Работа Фабрики Контента — это регулярность и следование алгоритмам платформ, которые должны дать органический прирост трафика и, как следствие, увеличение продаж вашего товара или услуги.
+                    </p>
+                </details>
+                
+                <details class="bg-white p-6 rounded-xl shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer">Через какое время ожидать результатов?</summary>
+                    <p class="mt-4" style="color: var(--gray-text);">
+                        В идеале результаты могут быть и через неделю после запуска Фабрики. Но будем реалистами: алгоритмы соцсетей любят регулярность. Первые 2-3 месяца — набор базы, узнаваемость. С 3-4 месяца — рост. К 6 месяцу — устойчивый органический трафик.
+                    </p>
+                </details>
+                
+                <details class="bg-white p-6 rounded-xl shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer">Чем мы отличаемся от SMM-агентства?</summary>
+                    <p class="mt-4" style="color: var(--gray-text);">
+                        Оговоримся — не только SMM, но и отдел маркетинга, продаж, видеопродакшн и специалист по рекламе. Давайте посчитаем по-минимуму: SMM-щик — 80к, менеджер — 50к, видеопродакшн — 90к, специалист по рекламе — 40к, координатор — 100к. Итого: 360к ежемесячно. Мы делаем ВСЮ эту работу в 10 раз дешевле и во много раз эффективнее.
+                    </p>
+                </details>
+                
+                <details class="bg-white p-6 rounded-xl shadow-sm">
+                    <summary class="font-semibold text-lg cursor-pointer">Работаем ли с вашей нишей?</summary>
+                    <p class="mt-4" style="color: var(--gray-text);">
+                        Работаем практически с любыми нишами, но есть исключения. На консультации покажем примеры из вашей или похожей сферы. Если не подходит — скажем честно и сразу. Локальный микробизнес скорее всего не подойдёт. Если же ваша локация - интернет (услуги формата консультаций, инфобизнес, консалтинг, E-commerce и пр.), то милости просим!
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="cta" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Готовы запустить систему?
+            </h2>
+            <p class="text-xl mb-8" style="color: var(--gray-text);">
+                Начните с бесплатного аудита — 30 минут в Zoom.<br>
+                Разберём ваши соцсети, покажем демо, дадим рекомендации.
+            </p>
+            <a href="https://t.me/fabkont_bot" target="_blank" class="inline-block bg-blue-600 text-white px-12 py-5 rounded-lg text-xl font-semibold hover:bg-blue-700 transition shadow-lg">
+                Записаться на аудит
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Фабрика Контента</h3>
+                    <p class="text-gray-400">Система контента, которая приводит клиентов</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Навигация</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#how-it-works" class="hover:text-white transition">Как работает</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Тарифы</a></li>
+                        <li><a href="#cases" class="hover:text-white transition">Кейсы</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://t.me/fabkont_bot" target="_blank" class="hover:text-white transition">Telegram бот</a></li>
+                        <li><a href="https://t.me/fabkont" target="_blank" class="hover:text-white transition">Telegram канал</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 Фабрика Контента | fabkont.ru</p>
+                <p class="mt-2">ИП Романов А.А. 330573539826</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fade-in animation script -->
+    <script>
+        // Fade in elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
