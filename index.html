@@ -6,6 +6,11 @@
     <meta name="description" content="Автоматическая система видеоконтента для бизнеса. 30 видео/мес, 6 платформ, полная воронка в ТГ. От 25 000 ₽/мес. Бесплатный аудит.">
     <title>Фабрика Контента — 30 видео в месяц без вашего участия | Система + воронка</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +58,10 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold" style="color: var(--primary-blue);">Фабрика Контента</div>
+            <a href="#hero" class="flex items-center gap-3">
+                <img src="logo.png" alt="Фабрика Контента" class="h-10 w-10">
+                <span class="text-2xl font-bold" style="color: var(--primary-blue);">Фабрика Контента</span>
+            </a>
             <div class="hidden md:flex gap-8 text-sm">
                 <a href="#how-it-works" class="hover:text-blue-600 transition">Как работает</a>
                 <a href="#pricing" class="hover:text-blue-600 transition">Тарифы</a>
@@ -68,20 +76,27 @@
 
     <!-- Hero Section -->
     <section id="hero" class="pt-32 pb-20 px-4">
-        <div class="max-w-4xl mx-auto text-center fade-in">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-text);">
-                Система контента, которая приводит клиентов
-            </h1>
-            <p class="text-xl md:text-2xl mb-8" style="color: var(--gray-text);">
-                30 видео в месяц без вашего участия. Не просто контент — полная воронка: от первого просмотра до заявки в боте.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="https://t.me/fabkont_bot" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">
-                    Бесплатный аудит
-                </a>
-                <a href="#how-it-works" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition">
-                    Как это работает
-                </a>
+        <div class="max-w-6xl mx-auto fade-in">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: var(--dark-text);">
+                        Система контента, которая приводит клиентов
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8" style="color: var(--gray-text);">
+                        30 видео в месяц без вашего участия. Не просто контент — полная воронка: от первого просмотра до заявки в боте.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <a href="https://t.me/fabkont_bot" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                            Бесплатный аудит
+                        </a>
+                        <a href="#how-it-works" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition">
+                            Как это работает
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="hero-illustration.png" alt="Контент-хаб система" class="w-full h-auto">
+                </div>
             </div>
         </div>
     </section>
@@ -94,22 +109,42 @@
             </h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <div class="mb-4">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#EF4444" stroke-width="2" fill="none"/>
+                            <path d="M15 9l-6 6M9 9l6 6" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-semibold mb-3">SMM-щики приходят и уходят</h3>
                     <p style="color: var(--gray-text);">А контент нужен каждый день</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <div class="mb-4">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#EF4444" stroke-width="2" fill="none"/>
+                            <path d="M15 9l-6 6M9 9l6 6" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-semibold mb-3">Платите 100-200к за команду</h3>
                     <p style="color: var(--gray-text);">Результат — «охваты растут». А продажи?</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <div class="mb-4">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#EF4444" stroke-width="2" fill="none"/>
+                            <path d="M15 9l-6 6M9 9l6 6" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-semibold mb-3">Видео есть. Воронки нет</h3>
                     <p style="color: var(--gray-text);">Заявок — ноль</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-red-500 text-3xl mb-4">❌</div>
+                    <div class="mb-4">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="#EF4444" stroke-width="2" fill="none"/>
+                            <path d="M15 9l-6 6M9 9l6 6" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-semibold mb-3">«Контент ради контента»</h3>
                     <p style="color: var(--gray-text);">Деньги в трубу</p>
                 </div>
@@ -127,31 +162,88 @@
             <!-- Funnel Diagram -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 text-center">
                 <div class="bg-blue-50 px-6 py-4 rounded-lg">
-                    <div class="text-3xl mb-2">🎬</div>
+                    <div class="mb-2">
+                        <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M8 5v14l11-7z" fill="url(#videoGrad)"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="url(#videoGrad)" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
                     <div class="font-semibold">Видео</div>
                     <div class="text-sm text-gray-600">30 шт/мес</div>
                 </div>
                 <div class="text-2xl text-gray-400">→</div>
                 <div class="bg-blue-50 px-6 py-4 rounded-lg">
-                    <div class="text-3xl mb-2">🌐</div>
+                    <div class="mb-2">
+                        <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="platformGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="12" cy="12" r="9" stroke="url(#platformGrad)" stroke-width="2" fill="none"/>
+                            <path d="M2 12h20M12 2c-2.5 2.5-3 7-3 10s.5 7.5 3 10m0-20c2.5 2.5 3 7 3 10s-.5 7.5-3 10" stroke="url(#platformGrad)" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <div class="font-semibold">6 платформ</div>
                     <div class="text-sm text-gray-600">Автопостинг</div>
                 </div>
                 <div class="text-2xl text-gray-400">→</div>
                 <div class="bg-blue-50 px-6 py-4 rounded-lg">
-                    <div class="text-3xl mb-2">📱</div>
+                    <div class="mb-2">
+                        <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="tgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.6 7.52c-.12.54-.44.67-.88.42l-2.44-1.8-1.18 1.13c-.13.13-.24.24-.49.24l.17-2.48 4.49-4.06c.2-.18-.04-.28-.3-.1l-5.55 3.5-2.39-.75c-.52-.16-.53-.52.11-.77l9.35-3.6c.43-.16.81.1.67.76z" fill="url(#tgGrad)"/>
+                        </svg>
+                    </div>
                     <div class="font-semibold">ТГ канал</div>
                     <div class="text-sm text-gray-600">Прогрев</div>
                 </div>
                 <div class="text-2xl text-gray-400">→</div>
                 <div class="bg-blue-50 px-6 py-4 rounded-lg">
-                    <div class="text-3xl mb-2">🤖</div>
+                    <div class="mb-2">
+                        <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="botGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="4" y="6" width="16" height="12" rx="2" stroke="url(#botGrad)" stroke-width="2" fill="none"/>
+                            <circle cx="9" cy="11" r="1.5" fill="url(#botGrad)"/>
+                            <circle cx="15" cy="11" r="1.5" fill="url(#botGrad)"/>
+                            <path d="M9 15h6" stroke="url(#botGrad)" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 3l2 3M20 3l-2 3" stroke="url(#botGrad)" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <div class="font-semibold">Бот</div>
                     <div class="text-sm text-gray-600">Квалификация</div>
                 </div>
                 <div class="text-2xl text-gray-400">→</div>
                 <div class="bg-green-50 px-6 py-4 rounded-lg">
-                    <div class="text-3xl mb-2">✅</div>
+                    <div class="mb-2">
+                        <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="12" cy="12" r="9" stroke="url(#checkGrad)" stroke-width="2" fill="none"/>
+                            <path d="M9 12l2 2 4-4" stroke="url(#checkGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="font-semibold">Заявка</div>
                     <div class="text-sm text-green-600">Результат</div>
                 </div>
@@ -295,6 +387,10 @@
                 </div>
             </div>
             
+            <div class="bg-white p-8 rounded-xl mb-8">
+                <img src="growth-chart.png" alt="График реалистичного роста" class="w-full max-w-2xl mx-auto h-auto">
+            </div>
+            
             <div class="bg-blue-50 p-8 rounded-xl text-center">
                 <h3 class="text-xl font-bold mb-4">Когда результат?</h3>
                 <p class="text-lg" style="color: var(--gray-text);">
@@ -409,7 +505,10 @@
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Фабрика Контента</h3>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="logo.png" alt="Фабрика Контента" class="h-8 w-8">
+                        <h3 class="text-xl font-bold">Фабрика Контента</h3>
+                    </div>
                     <p class="text-gray-400">Система контента, которая приводит клиентов</p>
                 </div>
                 <div>
